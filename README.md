@@ -58,7 +58,7 @@ You will be prompted about the changes
 <br >
 <br >
 
-## Part D: Add your name to start.php array
+## Part D: Create local version of database
 
 ### 1. Open in code editor
 `repo/trunk/application/config/database.php`
