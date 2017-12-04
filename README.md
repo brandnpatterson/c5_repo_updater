@@ -6,10 +6,12 @@
 + Automates the following:
     1. set permissions for emergenc folders
     2. copy / paste files used with localhost that aren't version controlled
+<br >
 
 ## Terminal Commands Used
 + `set777`: sets emergenc permissions
 + `update repo your-name`: copies files and folders from emergenc
+<br >
 
 ## If you have done the following, skip to Part B:
 ```
@@ -31,7 +33,7 @@ chmod 777 application/config
 `set777`
 You will be prompted about the changes
 <br >
-
+<br >
 
 ## Part B: Add C5 Repo Updater to your .bash_profile
 
