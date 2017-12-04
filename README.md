@@ -8,12 +8,10 @@
     2. copy / paste files used with localhost that aren't version controlled
 <br >
 
-
 ## Terminal Commands Used
 + `set777`: sets emergenc permissions
 + `update repo your-name`: copies files and folders from emergenc
-<br
-
+<br >
 
 ## If you have done the following, skip to Part B:
 ```
@@ -37,7 +35,6 @@ You will be prompted about the changes
 <br >
 <br >
 
-
 ## Part B: Add C5 Repo Updater to your .bash_profile
 
 ### 1. cd root and open in your code editor of choice
@@ -55,12 +52,11 @@ You will be prompted about the changes
 `cd ~/www`
 
 ### 2. Run update
-This takes 3 arguments including the repo's name and your name
-`$ update repo your-name`
+This takes 3 arguments including the repo's name and your name <br >
+`$ update repo your-name` <br >
 You will be prompted about the changes
 <br >
 <br >
-
 
 ## Part D: Add your name to start.php array
 ### 1. Open in code editor
