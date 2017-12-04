@@ -63,14 +63,33 @@ You must supply 3 arguments when running the update command
     2. the repo you are updating
     3. your name\n\n"
     
+    elif [[ ! -f "$repo/$config/$2.database.php" ]]; then
+        printf "<?php
+
+return array(
+    'default-connection' => 'concrete',
+    'connections' => array(
+        'concrete' => array(
+            'driver' => 'c5_pdo_mysql',
+            'server' => 'localhost',
+            'database' => '$repo',
+            'username' => 'root',
+            'password' => '',
+            'charset' => 'utf8'
+        )
+    )
+);" >> "$repo/$config/$2.database.php"
+        echo "Created: $repo/$config/$2.database.php"
     else
-        copy_file "$repo/$config/database.php" $name_database
+        echo "Exists: $repo/$config/$2.database.php"
     fi
 
     copy_directory "emergenc/trunk/updates" $updates
     copy_directory "emergenc/$config/doctrine" $doctrine
     copy_file "emergenc/$config/update.php" $update_php
 }
+
+
 
 alias set777="cd ~/www/emergenc/trunk && set_permissions"
 alias update="update_files $1 $2"
