@@ -52,8 +52,8 @@ You will be prompted about the changes
 `cd ~/www`
 
 ### 2. Run update
-This takes 3 arguments including the repo's name and your name <br >
 `$ update repo your-name` <br >
+This takes 3 arguments including the repo's name and your name <br >
 You will be prompted about the changes
 <br >
 <br >
