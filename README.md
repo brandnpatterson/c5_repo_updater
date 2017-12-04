@@ -19,6 +19,7 @@ chmod 777 packages &&
 chmod 777 application/files &&
 chmod 777 application/config
 ```
+<br >
 
 
 ## Part A: Set Permissions
@@ -29,6 +30,7 @@ chmod 777 application/config
 ### 2. Run set777 to chmod 777 necessary folders
 `set777`
 You will be prompted about the changes
+<br >
 
 
 ## Part B: Add C5 Repo Updater to your .bash_profile
@@ -39,6 +41,7 @@ You will be prompted about the changes
 ### 2. Open ~/.bash_profile
 + place C5 Repo Updater code into your .bash_profile
 + restart terminal
+<br >
 
 
 ## Part C: Copy files that aren't under version control
@@ -50,6 +53,7 @@ You will be prompted about the changes
 This takes 3 arguments including the repo's name and your name
 `$ update repo your-name`
 You will be prompted about the changes
+<br >
 
 
 ## Part D: Add your name to start.php array
