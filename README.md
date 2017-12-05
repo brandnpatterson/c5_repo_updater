@@ -13,7 +13,7 @@
 <br >
 
 
-## If you have done the following, skip to Part B:
+## If you have done the following, skip to #2:
 ```
 cd ~/www/emergenc/trunk &&
 chmod 777 application/config &&
@@ -24,7 +24,7 @@ chmod 777 application/config
 <br >
 
 
-## Part A: Set Permissions
+## 1. Set Permissions
 ```
 cd ~/www/emergenc/trunk
 set777
@@ -34,7 +34,7 @@ You will be prompted about the changes
 <br >
 
 
-## Part B: Add C5 Repo Updater to your .bash_profile
+## 2. Add C5 Repo Updater to your .bash_profile
 ```
 cd && code .
 ```
@@ -43,7 +43,7 @@ cd && code .
 <br >
 
 
-## Part C: Copy files that aren't under version control
+## 3: Copy files that aren't under version control
 ```
 cd ~/www
 $ update repo your-name
@@ -55,7 +55,7 @@ You will be prompted about the changes
 <br >
 
 
-## Part D: Add array to start.php
+## 4: Add array to start.php
 Open in code editor
 ```
 repo/trunk/application/boostrap/start.php
@@ -68,22 +68,22 @@ Add array
 <br >
 
 
-## Part E: Create local version of database
-1. Open in code editor
+## 5: Create local version of database
+Open in code editor
 ```
 repo/trunk/application/config/database.php
 ```
 
-2. put database info into Sequel Pro / phpmyadmin, add (SHS) to name if added to Favorites
+Put database info into Sequel Pro / phpmyadmin, add (SHS) to name if added to Favorites
 
-3. File/Export Database and close session
+File/Export Database and close session
 
-4. Be sure xampp/mamp is running and open localhost
+Be sure xampp/mamp is running and open localhost
 
-5. Add Database to localhost
+Add Database to localhost
 + Database/Add Database
     - Name: repo
     - Database Encoding: UTF-8 Unicode (utf8)
 
-6. Enter Database Credentials
+Enter Database Credentials
 replace file with one array and fill it with the newly created database credentials
