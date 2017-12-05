@@ -20,6 +20,7 @@ chmod 777 application/files &&
 chmod 777 application/config
 ```
 <br >
+<br >
 
 
 ## 1. Set Permissions
@@ -29,6 +30,8 @@ set777
 ```
 You will be prompted about the changes
 <br >
+<br >
+
 
 ## 2. Add C5 Repo Updater to your .bash_profile
 ```
@@ -36,6 +39,7 @@ cd && code .
 ```
 + place C5 Repo Updater code into your .bash_profile
 + restart terminal
+<br >
 <br >
 
 
@@ -48,6 +52,7 @@ This takes 3 arguments including the repo's name and your name
 <br >
 You will be prompted about the changes
 <br >
+<br >
 
 
 ## 4: Add array to start.php
@@ -59,6 +64,7 @@ Add array
 + add an array with the title of your `name`
 + fill the array with your machine's hostname
 + if on a mac, also add hostname.local
+<br >
 <br >
 
 
