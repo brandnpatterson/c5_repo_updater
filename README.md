@@ -35,6 +35,7 @@ You will be prompted about the changes
 <br >
 <br >
 
+
 ## Part B: Add C5 Repo Updater to your .bash_profile
 
 ### 1. cd root and open in your code editor of choice
@@ -58,7 +59,21 @@ You will be prompted about the changes
 <br >
 <br >
 
-## Part D: Create local version of database
+
+# Part D: Add array to start.php
+
+### 1. Open in code editor
+`repo/trunk/application/boostrap/start.php`
+
+### 2. Add array
++ add an array with the title of your `name`
++ fill the array with your machine's hostname
++ if on a mac, also add hostname.local
+<br >
+<br >
+
+
+## Part E: Create local version of database
 
 ### 1. Open in code editor
 `repo/trunk/application/config/database.php`
@@ -76,9 +91,6 @@ Be sure xampp/mamp is running and open localhost
 + Database/Add Database
     - Name: repo
     - Database Encoding: UTF-8 Unicode (utf8)
-
-### 6. Open in code editor
-`repo/trunk/application/config/your-name.database.php`
 
 ### 7. Enter Database Credentials
 replace file with one array and fill it with the newly created database credentials
