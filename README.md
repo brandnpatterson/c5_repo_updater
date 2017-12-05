@@ -1,4 +1,4 @@
-# C5 Repo Updater 🚀 v1.0.1
+# C5 Repo Updater 🚀 v1.0.2
 
 ## Purpose
 + Set up C5 localhost more quickly by relying on local emergenc files
