@@ -5,12 +5,10 @@
 + Automates the following:
     1. set permissions for emergenc folders
     2. copy / paste files used with localhost that aren't version controlled
-<br >
 
 ## Terminal Commands Used
 + `set777`: sets emergenc permissions
 + `update repo your-name`: copies files and folders from emergenc
-<br >
 
 
 ## If you have done the following, skip to #2:
@@ -21,7 +19,6 @@ chmod 777 packages &&
 chmod 777 application/files &&
 chmod 777 application/config
 ```
-<br >
 
 
 ## 1. Set Permissions
@@ -31,8 +28,6 @@ set777
 ```
 You will be prompted about the changes
 <br >
-<br >
-
 
 ## 2. Add C5 Repo Updater to your .bash_profile
 ```
@@ -52,7 +47,6 @@ This takes 3 arguments including the repo's name and your name
 <br >
 You will be prompted about the changes
 <br >
-<br >
 
 
 ## 4: Add array to start.php
@@ -64,7 +58,6 @@ Add array
 + add an array with the title of your `name`
 + fill the array with your machine's hostname
 + if on a mac, also add hostname.local
-<br >
 <br >
 
 
