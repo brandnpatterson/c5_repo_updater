@@ -59,6 +59,7 @@ You will be prompted about the changes
 <br >
 
 ## Part D: Add your name to start.php array
+
 ### 1. Open in code editor
 `repo/trunk/application/bootstrap/start.php`
 
