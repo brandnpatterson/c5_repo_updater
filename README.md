@@ -60,7 +60,7 @@ You will be prompted about the changes
 <br >
 
 
-# Part D: Add array to start.php
+## Part D: Add array to start.php
 
 ### 1. Open in code editor
 `repo/trunk/application/boostrap/start.php`
