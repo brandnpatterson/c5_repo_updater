@@ -19,6 +19,7 @@ chmod 777 packages &&
 chmod 777 application/files &&
 chmod 777 application/config
 ```
+<br >
 
 
 ## 1. Set Permissions
