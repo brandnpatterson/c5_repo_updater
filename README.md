@@ -19,8 +19,6 @@ chmod 777 packages &&
 chmod 777 application/files &&
 chmod 777 application/config
 ```
-<br >
-<br >
 
 
 ## 1. Set Permissions
@@ -29,8 +27,6 @@ cd ~/www/emergenc/trunk
 set777
 ```
 You will be prompted about the changes
-<br >
-<br >
 
 
 ## 2. Add C5 Repo Updater to your .bash_profile
@@ -39,8 +35,6 @@ cd && code .
 ```
 + place C5 Repo Updater code into your .bash_profile
 + restart terminal
-<br >
-<br >
 
 
 ## 3: Copy files that aren't under version control
@@ -51,8 +45,6 @@ $ update repo your-name
 This takes 3 arguments including the repo's name and your name 
 <br >
 You will be prompted about the changes
-<br >
-<br >
 
 
 ## 4: Add array to start.php
@@ -64,8 +56,6 @@ Add array
 + add an array with the title of your `name`
 + fill the array with your machine's hostname
 + if on a mac, also add hostname.local
-<br >
-<br >
 
 
 ## 5: Create local version of database
