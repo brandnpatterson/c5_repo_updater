@@ -1,4 +1,4 @@
-# C5 Repo Updater 🚀 v1.0.1
+# C5 Repo Updater 🚀 v1.0.0
 
 
 ## Purpose
@@ -59,7 +59,6 @@ You will be prompted about the changes
 <br >
 <br >
 
-
 ## Part D: Add array to start.php
 
 ### 1. Open in code editor
@@ -94,3 +93,14 @@ Be sure xampp/mamp is running and open localhost
 
 ### 7. Enter Database Credentials
 replace file with one array and fill it with the newly created database credentials
+<br >
+<br >
+
+
+## Part F: Edit `your-name`.database
+
+### 1. Open in code editor
+`repo/trunk/application/config/your-name.database.php`
+
+### 2. Edit file
+enter localhost database information
