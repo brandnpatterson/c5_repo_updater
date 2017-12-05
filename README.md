@@ -6,11 +6,14 @@
 + Automates the following:
     1. set permissions for emergenc folders
     2. copy / paste files used with localhost that aren't version controlled
+    3. create virtial host for the repo
 <br >
 
 ## Terminal Commands Used
 + `set777`: sets emergenc permissions
 + `update repo your-name`: copies files and folders from emergenc
+(The Following: Currently no support for mamp)
++ `sudo newhost.sh repo`: creates virtial host in /etc/hosts and xampp's httpd-vhosts
 <br >
 
 ## If you have done the following, skip to Part B:
@@ -85,7 +88,7 @@ put database info into SQL, add (SHS) to name if added to Favorites
 File/Export Database and close session
 
 ### 4. Connect to localhost
-Be sure xampp/mamp is running and open localhost
+Be sure xampp is running and open localhost
 
 ### 5. Add Database to localhost
 + Database/Add Database
