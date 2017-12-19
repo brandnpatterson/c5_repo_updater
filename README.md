@@ -73,7 +73,7 @@ Put database info into Sequel Pro / phpmyadmin, add (SHS) to name if added to Fa
 
 File/Export Database and close session
 
-Be sure xampp/mamp is running and open localhost
+Be sure xampp is running and open localhost
 
 Add Database to localhost
 + Database/Add Database
@@ -82,3 +82,11 @@ Add Database to localhost
 
 Enter Database Credentials
 replace file with one array and fill it with the newly created database credentials
+
+## 6. Create local virtual host
+1. Place newhost.sh into `/usr/local/bin`
+2. Restart terminal
+3. cd `/www`
+4. run `sudo newhost.sh repo`
+5. Parameters will be created for `/etc/hosts` as well as xampp's `/etc/extra/httpd-vhosts.conf`
+6. Your new virtual host is now created and can be used in the browser at http://repo.localhost
