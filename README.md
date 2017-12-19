@@ -1,7 +1,7 @@
-# C5 Repo Updater 🚀 v1.0.2
+# Repo Updater 🚀 v1.0.3
 
 ## Purpose
-+ Set up C5 localhost more quickly by relying on local emergenc files
++ Set up localhost more quickly by relying on local emergenc files
 + Automates the following:
     1. set permissions for emergenc folders
     2. copy / paste files used with localhost that aren't version controlled
@@ -29,11 +29,11 @@ set777
 You will be prompted about the changes
 
 
-## 2. Add C5 Repo Updater to your .bash_profile
+## 2. Add Repo Updater to your .bash_profile
 ```
 cd && code .
 ```
-+ place C5 Repo Updater code into your .bash_profile
++ place Repo Updater code into your .bash_profile
 + restart terminal
 
 
