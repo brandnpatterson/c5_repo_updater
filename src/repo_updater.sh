@@ -74,7 +74,7 @@ return array(
             'server' => 'localhost',
             'database' => '$repo',
             'username' => 'root',
-            'password' => '',
+            'password' => 'root',
             'charset' => 'utf8'
         )
     )

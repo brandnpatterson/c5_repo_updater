@@ -1,40 +1,18 @@
-# Repo Updater 🚀 v1.0.3
+# Repo Updater 🚀 v1.0.4
 
 ## Purpose
-+ Set up localhost more quickly by relying on local emergenc files
-+ Automates the following:
-    1. set permissions for emergenc folders
-    2. copy / paste files used with localhost that aren't version controlled
-    3. create virtial host for the repo
++ Set up localhost more quickly (rely on local emergenc files for c5 sites)
++ Automates copy / paste files used with localhost that aren't version controlled
++ Creates virtial host in httpd-vhosts.conf and a localhost in /etc/hosts for the repo
 <br >
 
 ## Terminal Commands Used
-+ `set777`: sets emergenc permissions
-+ `update repo your-name`: copies files and folders from emergenc
++ `update repo firstname`: copies files and folders from emergenc
 (The Following: Currently no support for mamp)
 + `sudo newhost.sh repo`: creates virtial host in /etc/hosts and xampp's httpd-vhosts
 <br >
 
-
-## If you have done the following, skip to #2:
-```
-cd ~/www/emergenc/trunk &&
-chmod 777 application/config &&
-chmod 777 packages &&
-chmod 777 application/files &&
-chmod 777 application/config
-```
-
-
-## 1. Set Permissions
-```
-cd ~/www/emergenc/trunk
-set777
-```
-You will be prompted about the changes
-
-
-## 2. Add Repo Updater to your .bash_profile
+## 1. Add Repo Updater to your .bash_profile
 ```
 cd && code .
 ```
@@ -42,17 +20,17 @@ cd && code .
 + restart terminal
 
 
-## 3: Copy files that aren't under version control
+## 2. Copy files that aren't under version control
 ```
 cd ~/www
-$ update repo your-name
+$ update repo firstname
 ```
 This takes 3 arguments including the repo's name and your name 
 <br >
 You will be prompted about the changes
 
 
-## 4: Add array to start.php
+## 3. Add array to start.php
 Open in code editor
 ```
 repo/trunk/application/boostrap/start.php
@@ -63,7 +41,7 @@ Add array
 + if on a mac, also add hostname.local
 
 
-## 5: Create local version of database
+## 4. Create local version of database
 Open in code editor
 ```
 repo/trunk/application/config/database.php
@@ -83,7 +61,7 @@ Add Database to localhost
 Enter Database Credentials
 replace file with one array and fill it with the newly created database credentials
 
-## 6. Create local virtual host
+## 5. Create local virtual host
 1. Place newhost.sh into `/usr/local/bin`
 2. Restart terminal
 3. cd `/www`
