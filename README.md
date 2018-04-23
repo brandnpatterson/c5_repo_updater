@@ -1,4 +1,4 @@
-# Repo Updater 🚀 v1.0.4
+# SHS Repo Updater 🚀 v1.0.4
 
 ## Purpose
 + Set up localhost more quickly (rely on local emergenc files for c5 sites)
