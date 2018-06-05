@@ -14,7 +14,7 @@ fi
 
 if [[ $1 =~ ^c5 ]]; then
     repo_substr=${repo:3}
-elif [[ $1 =~ '_com/'$ ]]; then
+else
     repo_substr=${repo::${#repo}-4}
 fi
 
