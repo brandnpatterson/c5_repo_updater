@@ -22,21 +22,14 @@ set_permissions () {
 }
 
 update_files () {
-    # -- copy local environment files from emergenc    
     repo=$1
-    name=$2
-    config="trunk/application/config"
+    read -p "Enter branch: " branch
+    read -p "Enter name: " name
 
     # -- If user input contains "/", remove it
-    if [[ $1 =~ '/'$ ]]; then
+    if [[ $repo =~ '/'$ ]]; then
         repo=${repo::${#repo}-1}
     fi
-
-    # -- filepaths
-    updates="$repo/trunk/updates"
-    doctrine="$repo/$config/doctrine"
-    update_php="$repo/$config/update.php"
-    name_database="$repo/$config/$2.database.php"
 
     copy_directory () {
         if [[ ! -d $2 ]]; then
@@ -56,16 +49,15 @@ update_files () {
         fi
     }
     
-    if [[ -z "$2" ]]; then
+    if [[ -z "$name" ]]; then
         printf "Error: Did not copy database.php -> your-name.database.php
 You must supply 3 arguments when running the update command
     1. update
     2. the repo you are updating
     3. your name\n\n"
-    
-    elif [[ ! -f "$repo/$config/$2.database.php" ]]; then
-        printf "<?php
 
+    elif [[ ! -f "$repo/$branch/application/config/$name.database.php" ]]; then
+        printf "<?php
 return array(
     'default-connection' => 'concrete',
     'connections' => array(
@@ -78,18 +70,17 @@ return array(
             'charset' => 'utf8'
         )
     )
-);" >> "$repo/$config/$2.database.php"
-        echo "Created: $repo/$config/$2.database.php"
+);" >> "$repo/$branch/application/config/$name.database.php"
+        echo "Created: $repo/$branch/application/config/$name.database.php"
     else
-        echo "Exists: $repo/$config/$2.database.php"
+        echo "Exists: $repo/$branch/application/config/$name.database.php"
     fi
 
-    copy_directory "emergenc/trunk/updates" $updates
-    copy_directory "emergenc/$config/doctrine" $doctrine
-    copy_file "emergenc/$config/update.php" $update_php
+    copy_directory "emergenc/trunk/updates" "$repo/$branch/updates"
+    copy_directory "emergenc/trunk/application/config/doctrine" "$repo/$branch/application/config/doctrine"
+    copy_file "emergenc/trunk/application/config/update.php" "$repo/$branch/application/config/update.php"
 }
 
-
+alias update="update_files $1"
 
 alias set777="cd ~/www/emergenc/trunk && set_permissions"
-alias update="update_files $1 $2"
