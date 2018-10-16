@@ -23,8 +23,8 @@ echo 127.0.0.1 $repo_substr.localhost >> /etc/hosts
 printf "\n# $repo
 <VirtualHost *:80>
     ServerName $repo_substr.localhost
-    DocumentRoot \"/Users/sg0301656/www/shs/$repo/trunk\"
-    <Directory \"/Users/sg0301656/www/shs/$repo/trunk\">
+    DocumentRoot \"/Applications/XAMPP/xamppfiles/htdocs/shs/$repo/trunk\"
+    <Directory \"/Applications/XAMPP/xamppfiles/htdocs/shs/$repo/trunk\">
         Options Indexes FollowSymLinks Includes ExecCGI
         AllowOverride All
         Require all granted
