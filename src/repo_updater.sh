@@ -1,26 +1,6 @@
-##
-## -- c5_repo_updater
-##
-
-set_permissions () {
-    # -- set local permissions for emergenc/trunk
-    packages="packages"
-    app_files="application/files"
-    app_config="application/config"
-    updates="updates"
-
-    chmod 777 $packages
-    chmod 777 $app_files
-    chmod 777 $app_config
-    chmod 777 $updates
-
-    printf "chmod 777 has been run on the following directories:
-    $packages
-    $app_files
-    $app_config
-    $updates\n"
-}
-
+# --
+# -- shs-repo-updater
+# --
 update_files () {
     repo=$1
     read -p "Enter branch: " branch
@@ -83,4 +63,40 @@ return array(
 
 alias update="update_files $1"
 
-alias set777="cd ~/www/emergenc/trunk && set_permissions"
+# --
+# -- cloudforge
+# --
+svn_co_immediates () {
+    if [[ -z "$1" ]]; then
+        echo 'Error: Repo Must Be Defied'
+        echo 'https://app.cloudforge.com/'
+    else
+        svn co "$1" --depth immediates
+    fi
+}
+
+set_depth_trunk () {
+    if [[ -z "$1" ]]; then
+        echo 'Error: Repo Must Be Defied'
+        echo 'https://app.cloudforge.com/'
+    else
+        svn up --set-depth infinity "$1/trunk"
+    fi
+}
+
+# --
+# -- svn:help
+# --
+svn_help () {
+    printf "svn:coi     co --depth immediates
+svn:sdt     --set-depth infinity trunk
+branch: svn up --set-depth infinity branches/branch
+"
+}
+alias svn:help="svn_help"
+alias svn:h="svn:help"
+alias svn:coi="svn_co_immediates $1"
+alias svn:sdt="set_depth_trunk $1"
+
+# -- svn revert
+alias svn:rev="svn revert conf/conf.php && svn revert index.php"
