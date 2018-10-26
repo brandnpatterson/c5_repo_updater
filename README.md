@@ -73,7 +73,7 @@ replace file with one array and fill it with the newly created database credenti
 
 1. Place newhost.sh into `/usr/local/bin`
 2. Restart terminal
-3. cd `/www`
+3. cd to the directory where you checked out the repo
 4. run `sudo newhost.sh repo`
 5. Parameters will be created for `/etc/hosts` as well as xampp's or mamp's `httpd-vhosts.conf`
 6. Your new virtual host is now created and can be used in the browser at http://repo.localhost
