@@ -11,7 +11,7 @@
 
 - `update repo`: copies files and folders from emergenc
   (The Following: Currently no support for mamp)
-- `sudo newhost.sh repo`: creates virtial host in /etc/hosts and xampp's httpd-vhosts
+- `sudo newhost.sh repo`: creates virtial host in /etc/hosts and xampp's or mamp's httpd-vhosts
   <br >
 
 ## 1. Add Repo Updater to your .bash_profile
@@ -58,7 +58,7 @@ Put database info into Sequel Pro / phpmyadmin, add (SHS) to name if added to Fa
 
 File/Export Database and close session
 
-Be sure xampp is running and open localhost
+Be sure your server is running and open localhost
 
 Add Database to localhost
 
@@ -75,5 +75,5 @@ replace file with one array and fill it with the newly created database credenti
 2. Restart terminal
 3. cd `/www`
 4. run `sudo newhost.sh repo`
-5. Parameters will be created for `/etc/hosts` as well as xampp's `/etc/extra/httpd-vhosts.conf`
+5. Parameters will be created for `/etc/hosts` as well as xampp's or mamp's `httpd-vhosts.conf`
 6. Your new virtual host is now created and can be used in the browser at http://repo.localhost
