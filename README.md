@@ -2,7 +2,7 @@
 
 ## Purpose
 
-- Set up localhost more quickly (rely on local emergenc files for c5 sites)
+- Sets up localhost more quickly (rely on local emergenc files for c5 sites)
 - Automates copy / paste files used with localhost that are not version controlled
 - Creates virtial host in httpd-vhosts.conf and a localhost in /etc/hosts for the repo
   <br >
