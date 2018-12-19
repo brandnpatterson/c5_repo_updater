@@ -2,15 +2,14 @@
 
 ## Purpose
 
-- Sets up localhost more quickly (rely on local emergenc files for c5 sites)
-- Automates copy / paste files used with localhost that are not version controlled
-- Creates virtial host in httpd-vhosts.conf and a localhost in /etc/hosts for the repo
+- Set up SHS localhost through bash scripts (rely on local emergenc files for c5 sites)
+- Automate copy and pasting files that are used with localhost and re not under version control
+- Create a host entry and Apache virtial host for the repo
   <br >
 
 ## Terminal Commands Used
 
 - `update repo`: copies files and folders from emergenc
-  (The Following: Currently no support for mamp)
 - `sudo newhost.sh repo`: creates virtial host in /etc/hosts and xampp's or mamp's httpd-vhosts
   <br >
 
