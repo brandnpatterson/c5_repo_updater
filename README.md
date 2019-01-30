@@ -3,7 +3,7 @@
 ## Purpose
 
 - Set up SHS localhost through bash scripts (rely on local emergenc files for c5 sites)
-- Automate copy and pasting files that are used with localhost and re not under version control
+- Automate copy and pasting files that are used with localhost and are not under version control
 - Create a host entry and Apache virtial host for the repo
   <br >
 
